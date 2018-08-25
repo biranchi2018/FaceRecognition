@@ -25,13 +25,7 @@ import cv2
 import os
 import time
 
-# http://192.168.1.1/videostream.cgi
-# http://admin:@192.168.1.1/videostream.cgi
-
-url = "http://admin:@192.168.1.1/videostream.cgi"
-url = 0
-
-video_capture = cv2.VideoCapture(url)
+video_capture = cv2.VideoCapture(0)
 #length = int(video_capture.get(cv2.CAP_PROP_FRAME_COUNT))
 
 video_capture.set(3,500)
